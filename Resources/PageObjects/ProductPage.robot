@@ -7,4 +7,4 @@ ${PRODUCT_LINK} =  xpath=//span[contains(text(),'Hot Wheels HW City 35/250 Ferra
 *** Keywords ***
 Verify Product Page
   click element  ${PRODUCT_LINK}
-  capture page screenshot  searched_product.png
+  log  capture page screenshot

@@ -7,4 +7,4 @@ Load Website
     maximize browser window
 Verify Page Load
     wait until page contains  Epic Daily Deals
-    capture page screenshot  landing_page.png
+    log  capture page screenshot

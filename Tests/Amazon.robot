@@ -12,7 +12,7 @@ ${SEARCH_TERM} =  Ferrari 458
 ${TEST_URL} =  https://www.amazon.com
 
 *** Test Cases ***
-Use must sign in to checkout
+Use should able to select searched product
     [Documentation]  This is a basic information about test
     [Tags]  Smoke
     AmazonWeb.Search for products
