@@ -7,6 +7,6 @@ Search For Products
   Click On Search
 
 Enter Product Name
-    input text  xpath=//*[@id="twotabsearchtextbox"]  Ferrari 458
+    input text  xpath=//*[@id="twotabsearchtextbox"]  ${SEARCH_TERM}
 Click On Search
     click button  id=nav-search-submit-button

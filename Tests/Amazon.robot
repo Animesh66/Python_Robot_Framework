@@ -5,6 +5,12 @@ Resource  ../Resources/Common.robot
 Test Setup  Begin Web Test
 Test Teardown  End Web Test
 
+*** Variables ***
+
+${WEB_BROWSER} =  firefox
+${SEARCH_TERM} =  Ferrari 458
+${TEST_URL} =  https://www.amazon.com
+
 *** Test Cases ***
 Use must sign in to checkout
     [Documentation]  This is a basic information about test
