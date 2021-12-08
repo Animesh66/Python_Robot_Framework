@@ -1,6 +1,10 @@
 *** Settings ***
 Library  SeleniumLibrary
 
+*** Variables ***
+${PRODUCT_LINK} =  xpath=//span[contains(text(),'Hot Wheels HW City 35/250 Ferrari 458 Italia')]
+
 *** Keywords ***
 Verify Product Page
-  click element  xpath=//span[contains(text(),'Hot Wheels HW City 35/250 Ferrari 458 Italia')]
+  click element  ${PRODUCT_LINK}
+  capture page screenshot  searched_product.png
