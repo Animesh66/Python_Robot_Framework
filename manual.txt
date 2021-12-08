@@ -1,0 +1,2 @@
+To run the robot script from command line use below command in the terminal
+robot -d Results Tests/Amazon.robot
