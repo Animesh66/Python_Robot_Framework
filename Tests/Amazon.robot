@@ -7,7 +7,7 @@ Test Teardown  End Web Test
 
 *** Variables ***
 
-${WEB_BROWSER} =  firefox
+${WEB_BROWSER} =  chrome
 ${SEARCH_TERM} =  Ferrari 458
 ${TEST_URL} =  https://www.amazon.com
 

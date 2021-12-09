@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library  ScreenCapLibrary
+Library   Screenshot
 *** Keywords ***
 Verify Search Result
   wait until page contains  results for "${SEARCH_TERM}"

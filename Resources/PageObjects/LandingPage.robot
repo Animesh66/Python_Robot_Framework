@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library   ScreenCapLibrary
+Library   Screenshot
 *** Keywords ***
 Load Website
     go to  ${TEST_URL}

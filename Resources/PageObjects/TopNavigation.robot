@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library  ScreenCapLibrary
+Library   Screenshot
 *** Variables ***
 ${TOP_NAV_SEARCH_BAR} =  xpath=//*[@id="twotabsearchtextbox"]
 ${TOP_NAV_SEARCH_BUTTON} =  id=nav-search-submit-button
