@@ -1,10 +1,10 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Library   ScreenCapLibrary
 *** Keywords ***
 Load Website
     go to  ${TEST_URL}
     maximize browser window
 Verify Page Load
     wait until page contains  Epic Daily Deals
-    log  capture page screenshot
+    take screenshot  VerifyPageLoad.jpg

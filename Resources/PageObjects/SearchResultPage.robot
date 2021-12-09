@@ -1,7 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Library  ScreenCapLibrary
 *** Keywords ***
 Verify Search Result
   wait until page contains  results for "${SEARCH_TERM}"
-  log  capture page screenshot
+  take screenshot  SearchResultPage.jpg

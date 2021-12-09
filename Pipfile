@@ -9,6 +9,7 @@ selenium = "*"
 robotframework-seleniumlibrary = "*"
 robotframework-requests = "*"
 robotframework-appiumlibrary = "*"
+robotframework-screencaplibrary = "*"
 
 [dev-packages]
 
