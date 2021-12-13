@@ -13,6 +13,7 @@ Search For Products
 Enter Product Name
     input text  ${TOP_NAV_SEARCH_BAR}  ${SEARCH_TERM}
     take screenshot  EnterProductName.jpg
+
 Click On Search
     click button  ${TOP_NAV_SEARCH_BUTTON}
     take screenshot  ClickOnButton.jpg

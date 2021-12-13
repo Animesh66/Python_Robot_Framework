@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211209 14:34:41.420" rpa="false" schemaversion="2">
-<suite id="s1" name="Amazon" source="C:\Users\Animesh_Mukherjee\PycharmProjects\Python_Robot_Framework\Tests\Amazon.robot">
-<test id="s1-t1" name="Use should able to select searched product">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211213 17:34:00.683" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\Animesh_Mukherjee\PycharmProjects\Python_Robot_Framework\Tests">
+<suite id="s1-s1" name="Amazon" source="C:\Users\Animesh_Mukherjee\PycharmProjects\Python_Robot_Framework\Tests\Amazon.robot">
+<test id="s1-s1-t1" name="Use should able to select searched product">
 <kw name="Begin Web Test" library="Common" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${WEB_BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211209 14:34:41.619" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20211209 14:34:41.619" endtime="20211209 14:34:42.989"/>
+<msg timestamp="20211213 17:34:01.035" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211213 17:34:01.035" endtime="20211213 17:34:02.561"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:41.619" endtime="20211209 14:34:42.989"/>
+<status status="PASS" starttime="20211213 17:34:01.035" endtime="20211213 17:34:02.561"/>
 </kw>
 <kw name="Search for products" library="AmazonWeb">
 <kw name="Load Website" library="LandingPage">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${TEST_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211209 14:34:42.990" level="INFO">Opening url 'https://www.amazon.com'</msg>
-<status status="PASS" starttime="20211209 14:34:42.990" endtime="20211209 14:34:47.686"/>
+<msg timestamp="20211213 17:34:02.563" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<status status="PASS" starttime="20211213 17:34:02.563" endtime="20211213 17:34:16.309"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211209 14:34:47.686" endtime="20211209 14:34:47.814"/>
+<status status="PASS" starttime="20211213 17:34:16.310" endtime="20211213 17:34:16.431"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:42.990" endtime="20211209 14:34:47.815"/>
+<status status="PASS" starttime="20211213 17:34:02.562" endtime="20211213 17:34:16.431"/>
 </kw>
 <kw name="Verify Page Load" library="LandingPage">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Epic Daily Deals</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211209 14:34:47.815" endtime="20211209 14:34:47.839"/>
+<status status="PASS" starttime="20211213 17:34:16.432" endtime="20211213 17:34:16.448"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <arg>VerifyPageLoad.jpg</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20211209 14:34:47.921" level="INFO" html="true">&lt;a href="VerifyPageLoad.jpg"&gt;&lt;img src="VerifyPageLoad.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211209 14:34:47.839" endtime="20211209 14:34:47.921"/>
+<msg timestamp="20211213 17:34:16.547" level="INFO" html="true">&lt;a href="VerifyPageLoad.jpg"&gt;&lt;img src="VerifyPageLoad.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 17:34:16.449" endtime="20211213 17:34:16.548"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:47.815" endtime="20211209 14:34:47.921"/>
+<status status="PASS" starttime="20211213 17:34:16.431" endtime="20211213 17:34:16.548"/>
 </kw>
 <kw name="Search For Products" library="TopNavigation">
 <kw name="Enter Product Name" library="TopNavigation">
@@ -46,81 +47,83 @@
 <arg>${TOP_NAV_SEARCH_BAR}</arg>
 <arg>${SEARCH_TERM}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211209 14:34:47.923" level="INFO">Typing text 'Ferrari 458' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
-<status status="PASS" starttime="20211209 14:34:47.922" endtime="20211209 14:34:48.035"/>
+<msg timestamp="20211213 17:34:16.549" level="INFO">Typing text 'Ferrari 458' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20211213 17:34:16.549" endtime="20211213 17:34:16.648"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <arg>EnterProductName.jpg</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20211209 14:34:48.094" level="INFO" html="true">&lt;a href="EnterProductName.jpg"&gt;&lt;img src="EnterProductName.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211209 14:34:48.036" endtime="20211209 14:34:48.094"/>
+<msg timestamp="20211213 17:34:16.690" level="INFO" html="true">&lt;a href="EnterProductName.jpg"&gt;&lt;img src="EnterProductName.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 17:34:16.648" endtime="20211213 17:34:16.690"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:47.922" endtime="20211209 14:34:48.094"/>
+<status status="PASS" starttime="20211213 17:34:16.548" endtime="20211213 17:34:16.691"/>
 </kw>
 <kw name="Click On Search" library="TopNavigation">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${TOP_NAV_SEARCH_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211209 14:34:48.095" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
-<status status="PASS" starttime="20211209 14:34:48.095" endtime="20211209 14:34:53.162"/>
+<msg timestamp="20211213 17:34:16.691" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20211213 17:34:16.691" endtime="20211213 17:34:32.476"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <arg>ClickOnButton.jpg</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20211209 14:34:53.225" level="INFO" html="true">&lt;a href="ClickOnButton.jpg"&gt;&lt;img src="ClickOnButton.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211209 14:34:53.162" endtime="20211209 14:34:53.226"/>
+<msg timestamp="20211213 17:34:32.539" level="INFO" html="true">&lt;a href="ClickOnButton.jpg"&gt;&lt;img src="ClickOnButton.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 17:34:32.476" endtime="20211213 17:34:32.539"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:48.094" endtime="20211209 14:34:53.226"/>
+<status status="PASS" starttime="20211213 17:34:16.691" endtime="20211213 17:34:32.540"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:47.921" endtime="20211209 14:34:53.226"/>
+<status status="PASS" starttime="20211213 17:34:16.548" endtime="20211213 17:34:32.540"/>
 </kw>
 <kw name="Verify Search Result" library="SearchResultPage">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>results for "${SEARCH_TERM}"</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211209 14:34:53.226" endtime="20211209 14:34:53.257"/>
+<status status="PASS" starttime="20211213 17:34:32.540" endtime="20211213 17:34:32.572"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <arg>SearchResultPage.jpg</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20211209 14:34:53.297" level="INFO" html="true">&lt;a href="SearchResultPage.jpg"&gt;&lt;img src="SearchResultPage.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211209 14:34:53.257" endtime="20211209 14:34:53.297"/>
+<msg timestamp="20211213 17:34:32.631" level="INFO" html="true">&lt;a href="SearchResultPage.jpg"&gt;&lt;img src="SearchResultPage.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 17:34:32.572" endtime="20211213 17:34:32.632"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:53.226" endtime="20211209 14:34:53.297"/>
+<status status="PASS" starttime="20211213 17:34:32.540" endtime="20211213 17:34:32.632"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:42.989" endtime="20211209 14:34:53.297"/>
+<status status="PASS" starttime="20211213 17:34:02.562" endtime="20211213 17:34:32.632"/>
 </kw>
 <kw name="Select product" library="AmazonWeb">
 <kw name="Verify Product Page" library="ProductPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PRODUCT_LINK}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211209 14:34:53.299" level="INFO">Clicking element 'xpath=//span[contains(text(),'Hot Wheels HW City 35/250 Ferrari 458 Italia')]'.</msg>
-<status status="PASS" starttime="20211209 14:34:53.299" endtime="20211209 14:35:01.146"/>
+<msg timestamp="20211213 17:34:32.634" level="INFO">Clicking element 'xpath=//span[contains(text(),'Hot Wheels HW City 35/250 Ferrari 458 Italia')]'.</msg>
+<status status="PASS" starttime="20211213 17:34:32.633" endtime="20211213 17:34:36.432"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <arg>ProductPage.jpg</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20211209 14:35:01.202" level="INFO" html="true">&lt;a href="ProductPage.jpg"&gt;&lt;img src="ProductPage.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211209 14:35:01.146" endtime="20211209 14:35:01.202"/>
+<msg timestamp="20211213 17:34:36.484" level="INFO" html="true">&lt;a href="ProductPage.jpg"&gt;&lt;img src="ProductPage.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 17:34:36.432" endtime="20211213 17:34:36.484"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:53.298" endtime="20211209 14:35:01.202"/>
+<status status="PASS" starttime="20211213 17:34:32.633" endtime="20211213 17:34:36.484"/>
 </kw>
-<status status="PASS" starttime="20211209 14:34:53.298" endtime="20211209 14:35:01.202"/>
+<status status="PASS" starttime="20211213 17:34:32.633" endtime="20211213 17:34:36.484"/>
 </kw>
 <kw name="End Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211209 14:35:01.203" endtime="20211209 14:35:03.712"/>
+<status status="PASS" starttime="20211213 17:34:36.485" endtime="20211213 17:34:39.010"/>
 </kw>
-<status status="PASS" starttime="20211209 14:35:01.203" endtime="20211209 14:35:03.713"/>
+<status status="PASS" starttime="20211213 17:34:36.485" endtime="20211213 17:34:39.011"/>
 </kw>
 <doc>This is a basic information about test</doc>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20211209 14:34:41.618" endtime="20211209 14:35:03.714"/>
+<status status="PASS" starttime="20211213 17:34:01.034" endtime="20211213 17:34:39.012"/>
 </test>
 <doc>This is where we declare all the libraries</doc>
-<status status="PASS" starttime="20211209 14:34:41.425" endtime="20211209 14:35:03.717"/>
+<status status="PASS" starttime="20211213 17:34:00.713" endtime="20211213 17:34:39.014"/>
+</suite>
+<status status="PASS" starttime="20211213 17:34:00.688" endtime="20211213 17:34:39.019"/>
 </suite>
 <statistics>
 <total>
@@ -130,7 +133,8 @@
 <stat pass="1" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Amazon">Tests.Amazon</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  Screenshot
+
 *** Keywords ***
 Load Website
     go to  ${TEST_URL}
