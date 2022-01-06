@@ -15,8 +15,8 @@ ${TEST_URL} =  https://www.amazon.com
 Use should able to select searched product
     [Documentation]  This is a basic information about test
     [Tags]  Smoke
-    AmazonWeb.Search for products
-    AmazonWeb.Select product
+    AmazonWeb.Search for Products
+    AmazonWeb.Select Product
 
 
 

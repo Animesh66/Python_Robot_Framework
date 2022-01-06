@@ -5,11 +5,11 @@ Resource  ../Resources/PageObjects/SearchResultPage.robot
 Resource  ../Resources/PageObjects/TopNavigation.robot
 
 *** Keywords ***
-Search for products
+Search for Products
     LandingPage.Load Website
     LandingPage.Verify Page Load
     TopNavigation.Search For Products
     SearchResultPage.Verify Search Result
 
-Select product
+Select Product
     ProductPage.Verify Product Page
